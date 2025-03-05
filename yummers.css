@@ -1,0 +1,142 @@
+p {
+    font-family:inter;
+    font-weight: bold;
+    color: white;
+}
+h3 {
+    padding: 10px;
+    font-family:inter;
+    font-weight: bold;
+    color: white;
+}
+
+.sidebar {
+    flex-direction: column;
+    position:fixed;
+    align-items: flex-end;
+    padding: 10px;
+    height: 100%;
+    width: fit-content;
+    right:0;
+    gap: 15px;
+    background-color: #404040;
+    z-index: 23;
+}
+
+.sidebar-item {
+    padding: 1px;
+    background-color: #202020;
+    border-radius: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+.top-bar-text{
+    justify-self:right;
+    z-index: 21;
+    padding: 0%;
+    font-size:70px;  
+    margin: 0%; 
+}
+.top-bar {
+    position: fixed;
+    width: 100%;
+    background-color: #202020;  
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    z-index: 18;
+}
+
+.top-bar-displace {
+    width: 100%;
+    height: 100px;
+    background-color: #202020;  
+    color: white;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    z-index: 15;
+}
+
+.clickybox {
+    display: inline-flex;
+    flex-shrink: 0;
+    cursor:pointer;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    background-image: linear-gradient(90deg, #10101000, #10101000, #10101000),var(--box-bg-image);
+    border-radius: 5%;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    transition: 0.3s linear;
+}
+.clickybox:hover {
+    background-image: linear-gradient(90deg, #101010ff, #101010ff, #10101080),var(--box-bg-image);
+    border: 3px solid #ffffff;
+    transition: 0.1s ease;
+}
+
+/*  linear-gradient(135deg, #00ffffff, #00ffff80, #00000000,#00000000) 1; */
+
+.clickybox:hover p {
+    opacity: 100;
+}
+
+.clickybox p {
+    opacity: 0;
+    max-width: 50%; /* Wrap text after it reaches halfway */
+    word-wrap: break-word; /* Ensure long words break to fit */
+    text-align: left; /* Center the text inside the box */
+    margin: 0; /* Remove margin around the paragraph */
+    transition: opacity 0.1s ease;
+}
+
+.clickyboxholder {
+
+    /*thanks gpt i have literally no clue wtf ts is and i cant be bothered to find out*/
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 40px;
+    gap: 40px;
+    /*justify-content: flex-start;
+    justify-content: center;*/
+    align-items: flex-start;
+    box-sizing: border-box;
+    overflow-x: none; /* Hide the scrollbar */
+    position: relative;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(180deg,#303030, #101010);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.profile-image{
+    justify-self: left;
+    border-radius:50%;
+    border: 5px;
+    border-style: solid;
+    border-color:#ffffff;
+    width:100px;
+    height: 100px;
+    z-index: 21;
+}
+
